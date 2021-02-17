@@ -43,5 +43,43 @@ public class Statements {
         }else{
             System.out.println("Wrong input..");
         }
+                
+         /// Switch Case 
+        System.out.println("Enter your Marks");
+        int marks = sc.nextInt();
+        
+        if(marks>0 && marks <= 100){
+            
+        switch(marks/10){
+            case 10:
+                System.out.println("You got A+");
+                break;
+            case 9:
+                System.out.println("You got A");
+                break;
+            case 8:
+                System.out.println("You got B+");
+                break;
+            case 7:
+                System.out.println("You got B");
+                break;
+            case 6:
+                System.out.println("You got C");
+                break;
+            case 5:
+                System.out.println("You got D");
+                break;
+            case 4:
+                System.out.println("You got F");
+                break;
+            default :
+                System.out.println("Invalud Input. . .");
+                break;
+         }
+                
+        }
+        else{
+            System.out.println("Invalid Input. . .");
+        }
     }
 }
